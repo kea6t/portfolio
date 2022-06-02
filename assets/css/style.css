@@ -64,7 +64,6 @@ body {
 /* formats the nav links */
 .header nav ul li {
     margin-left: 25px;
-    border-bottom: 3px solid var(--primary-color);
     padding: 10px;
     font-size: 16px;
 }
@@ -81,7 +80,7 @@ body {
     color: var(--secondary-color);
     background-color: var(--primary-color);
     text-shadow: none;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 a {
@@ -218,4 +217,93 @@ p {
 
 .footer h2 {
     font-size: 20px;
+}
+
+/* Media queries for Desktop screens 980px */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    footer h2, .footer p {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-cta {
+        right: 0;
+        bottom: 0;
+        font-size: 1.5vw;
+        width: 100%;
+    }
+
+    .benefits {
+        width: 100%;
+        margin-top: 20px;
+        justify-content: center;
+    }
+}
+
+/* Media queries for smaller screens max height of 768px */
+@media screen and (max-height: 768px) {
+    section{
+        padding: 30px 15px;
+    }
+
+    .benefits {
+        height: 200px;
+    }
+
+    .benefits h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+
+    .benefits img {
+        flex: 0 32%;
+        margin-top: 15px;
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+
+    .content {
+        flex: 100%;
+    }
+    
+}
+
+/* Media queries for smaller mobile screens max height of 575px */
+@media screen and (max-height: 575px) {
+    .benefits {
+        height: 150px;
+    }
+
+    .benefits h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+
+    .benefits img {
+        flex: 0 32%;
+        margin-top: 15px;
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+
+    .content {
+        flex: 100%;
+    }
 }
